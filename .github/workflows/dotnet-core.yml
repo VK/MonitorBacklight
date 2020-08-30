@@ -22,4 +22,16 @@ jobs:
     - name: Build
       run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
       working-directory: ./app/
+      
+      
+    - name: Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+             D:\a\MonitorBacklight\MonitorBacklight\app\bin\Release\netcoreapp3.1\win-x64\publish\app.exe
+      
 
