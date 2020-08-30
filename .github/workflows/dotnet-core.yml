@@ -23,6 +23,8 @@ jobs:
       run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
       working-directory: ./app/
       
+    - name: Rename app
+      run: mv ./app/bin/Release/netcoreapp3.1/win-x64/publish/app.exe ./app/bin/Release/netcoreapp3.1/win-x64/publish/MonitorBacklight.exe
       
     - name: Release
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -32,5 +34,5 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-             ./app/bin/Release/netcoreapp3.1/win-x64/publish/app.exe
+             ./app/bin/Release/netcoreapp3.1/win-x64/publish/MonitorBacklight.exe
 
