@@ -17,10 +17,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.x'
-    - name: check
-      run: ls .
-    - name: Install dependencies
-      run: dotnet restore app
+    
+    # Add  MsBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.0.0
+       
     - name: Build
-      run: dotnet -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
+      run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
 
