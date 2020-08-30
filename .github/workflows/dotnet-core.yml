@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - working-directory: app
+    - run: cd app
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
