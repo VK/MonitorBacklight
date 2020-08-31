@@ -13,4 +13,4 @@ Install .NET Core from [dotnet.microsoft.com/download](https://dotnet.microsoft.
 dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true /p:PublishTrimmed=true
 ```
 
-You can also use the latest github developement build: [MonitorBacklight.exe](https://github.com/VK/MonitorBacklight/releases/download/latest/MonitorBacklight.exe)
+You can also use the latest github developement build: [MonitorBacklight.exe](https://github.com/VK/MonitorBacklight/releases/download/latest_app/MonitorBacklight.exe)

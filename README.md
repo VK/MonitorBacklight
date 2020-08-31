@@ -21,4 +21,4 @@ Add some ambient light to your computer monitor with this bad weather project.
 | App | Controller | LEDs |
 |:-:|:-:|:-:|
 | [<img src="./media/screenshot.png" alt="App" height="170" />](./media/screenshot.png "App")| [<img src="./media/controller_tn.png" alt="Controller" height="170" />](./media/controller.png "Controller") | [<img src="./media/ledstrip_tn.png" alt="LEDs" height="170" />](./media/ledstrip.png "LEDs") |
-| [MonitorBacklight.exe](https://github.com/VK/MonitorBacklight/releases/download/latest/MonitorBacklight.exe) | eg. Beetle Atmega32U4 |  |
+| [MonitorBacklight.exe](https://github.com/VK/MonitorBacklight/releases/download/latest_app/MonitorBacklight.exe) | eg. Beetle Atmega32U4 |  |
