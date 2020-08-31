@@ -5,6 +5,7 @@ using System;
 
 
 
+
 namespace app
 {
     /// <summary>
@@ -37,6 +38,25 @@ namespace app
          }
          set {
              this._port = value;
+         }
+
+        }
+
+
+
+        private String _period  = null;
+
+        public String Period {
+
+         get {
+             if(this._period == null) {
+                 var cfg =  AppConfiguration.GetCustomSection();
+                 this._period = String.Format("{0} ms", cfg.Period);
+             }
+             return this._period;
+         }
+         set {
+             this._period = value;
          }
 
         }

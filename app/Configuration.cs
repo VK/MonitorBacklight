@@ -32,6 +32,20 @@ namespace app
             }
         }
 
+
+        [ConfigurationProperty("period", DefaultValue = 100, IsRequired = true, IsKey = true)]
+        public int Period
+        {
+            get
+            {
+                return (int)this["period"];
+            }
+            set
+            {
+                this["period"] = value;
+            }
+        }
+
     }
 
     #endregion
@@ -63,6 +77,7 @@ namespace app
                 }
 
                 Console.WriteLine("COM Port: {0}", customSection.Port);
+                Console.WriteLine("Period: {0}", customSection.Period);
 
                 return customSection;
             }

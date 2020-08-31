@@ -18,6 +18,18 @@
             <local:PortRadioItem Header="COM9" />
         </MenuItem>
 
+
+        <MenuItem Header="{Binding Period}">
+            <local:PeriodRadioItem Header="50 ms" />        
+            <local:PeriodRadioItem Header="75 ms" />        
+            <local:PeriodRadioItem Header="100 ms" />
+            <local:PeriodRadioItem Header="150 ms" />
+            <local:PeriodRadioItem Header="200 ms" />
+            <local:PeriodRadioItem Header="250 ms" />
+            <local:PeriodRadioItem Header="500 ms" />
+            <local:PeriodRadioItem Header="1000 ms" />
+        </MenuItem>
+
         <Separator />
 
         <MenuItem Header="Exit" Command="{Binding ExitApplicationCommand}" />

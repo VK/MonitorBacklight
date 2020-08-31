@@ -22,13 +22,27 @@ namespace app
 
         private string _portName = null;
 
-        public String PortName {
-            set {
-                if (serial != null) {
+        public String PortName
+        {
+            set
+            {
+                if (serial != null)
+                {
                     serial.Close();
                     serial = null;
                 }
                 _portName = value;
+            }
+        }
+
+        public int Period
+        {
+            set
+            {
+                if (_timer != null)
+                {
+                    _timer.Change(0, value);
+                }
             }
         }
 
@@ -68,7 +82,7 @@ namespace app
                     )
                     {
 
-                        screenGraphics.CopyFromScreen(new System.Drawing.Point(0, 0), new System.Drawing.Point(0, 0), size );
+                        screenGraphics.CopyFromScreen(new System.Drawing.Point(0, 0), new System.Drawing.Point(0, 0), size);
 
                         Bitmap32 bm32 = new Bitmap32(screenBmp);
                         bm32.LockBitmap();

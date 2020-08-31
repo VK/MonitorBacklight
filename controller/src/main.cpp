@@ -55,8 +55,8 @@ void loop()
 
   for (int i = 0; i < numPixels * 3; i++)
   {
-    current[i] += (target[i] > current[i])*0.75;
-    current[i] -= (target[i] < current[i])*0.75;
+    current[i] += (target[i] > current[i])*0.25;
+    current[i] -= (target[i] < current[i])*0.25;
   }
 
   for (int i = 0; i < numPixels; i++)
