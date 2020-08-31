@@ -1,4 +1,8 @@
+<a href="#"><img src="media/620.png" width="128" height="128" align="right"/></a>
+
 # **VK** Monitor Backlight
+
+![.NET Core](https://github.com/VK/MonitorBacklight/workflows/.NET%20Core/badge.svg)
 
 Add some ambient light to your computer monitor with this bad weather project.
 
