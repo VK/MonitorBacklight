@@ -16,7 +16,7 @@ Add some ambient light to your computer monitor with this bad weather project.
 
 ## Components
 * [**App**](./app): a C# [.NET Core](https://dotnet.microsoft.com/) project to transform the picture on the main screen to some serial output 
-* [**Controller**](./controller): a [PlatformIO](https://platformio.org/) project for [Arduinos](https://www.arduino.cc/) to convert the serial input and drive a strip of [WS2812](https://cdn-shop.adafruit.com/datasheets/WS2812.pdf) leds
+* [**Controller**](./controller): a [PlatformIO](https://platformio.org/) project for [Arduinos](https://www.arduino.cc/) to listen for serial input and drive a strip of [WS2812](https://cdn-shop.adafruit.com/datasheets/WS2812.pdf) leds
 
 | App | Controller | LEDs |
 |:-:|:-:|:-:|
