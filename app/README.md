@@ -1,3 +1,4 @@
+<a href="#"><img src="../media/620.png" width="128" height="128" align="right"/></a>
 # **VK** Monitor Backlight - Windows App
 
 ![.NET Core](https://github.com/VK/MonitorBacklight/workflows/.NET%20Core/badge.svg)
